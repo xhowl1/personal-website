@@ -1,0 +1,80 @@
+/* Personal page — overrides + additions to the main brutalist styles. */
+
+.personal-body { background: var(--brut-bg, #f5f1e8); }
+.personal-main { max-width: 1200px; margin: 0 auto; padding: 56px 48px 0; }
+
+.personal-hero { padding-top: 24px; }
+.personal-back {
+  color: inherit; text-decoration: none;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px; letter-spacing: 0.06em;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+.personal-back:hover { background: var(--brut-fg); color: var(--brut-bg); border-bottom-color: var(--brut-fg); }
+
+/* Games grid */
+.personal-games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: var(--brut-border) solid var(--brut-fg);
+  border-left: var(--brut-border) solid var(--brut-fg);
+  margin-top: 36px;
+}
+.personal-game-card {
+  padding: 28px 24px 32px;
+  border-right: 1.5px solid var(--brut-fg);
+  border-bottom: 1.5px solid var(--brut-fg);
+  background: var(--brut-card, #faf6ec);
+  display: flex; flex-direction: column; gap: 8px;
+  min-height: 180px;
+}
+.personal-game-name {
+  font-size: 28px; font-weight: 700; letter-spacing: -0.02em;
+  margin: 6px 0 6px;
+}
+.personal-game-note {
+  font-size: 14px; line-height: 1.55; color: var(--brut-muted);
+  margin: auto 0 0;
+}
+
+/* Music section */
+.personal-music-section { padding-bottom: 80px; }
+.personal-music-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 36px;
+  align-items: start;
+  margin-top: 24px;
+}
+.personal-music-lede {
+  font-size: 22px; line-height: 1.45; letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: pretty;
+}
+.personal-music-aside {
+  border: var(--brut-border) solid var(--brut-fg);
+  background: var(--brut-card, #faf6ec);
+  padding: 22px 22px 24px;
+}
+.personal-music-aside p {
+  font-size: 16px; line-height: 1.5; margin: 8px 0 0;
+}
+
+/* Footer */
+.personal-foot { padding: 0 0 48px; margin-top: 24px; }
+.personal-foot .brut-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 0;
+  border-top: var(--brut-border) solid var(--brut-fg);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11.5px; letter-spacing: 0.04em;
+}
+.personal-foot a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+.personal-foot a:hover { background: var(--brut-fg); color: var(--brut-bg); border-bottom-color: var(--brut-fg); }
+
+@media (max-width: 900px) {
+  .personal-main { padding: 32px 22px 0; }
+  .personal-games-grid { grid-template-columns: 1fr; }
+  .personal-music-grid { grid-template-columns: 1fr; }
+}

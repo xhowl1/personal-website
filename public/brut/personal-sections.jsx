@@ -17,6 +17,7 @@ const STATUS_TONE = {
 
 const GAMES = [
   { state: 'Currently',  name: 'Battlefield 6',   note: 'Quick sessions when the shop is closed for the night.' },
+  { state: 'Currently',  name: 'RE: Village',     note: 'Atmospheric horror for the late-night solo runs.' },
   { state: 'On pause',   name: 'Apex Legends',    note: 'Might come back to it soon. The squad knows.' },
   { state: 'Up next',    name: 'Silksong',        note: 'On the horizon. The wait continues.' },
 ];

@@ -49,7 +49,6 @@ function CommandPalette({ open, setOpen }) {
     { label: 'Jump to: Homelab',  kind: 'nav', go: () => scrollToId('homelab') },
     { label: 'Jump to: Stack',    kind: 'nav', go: () => scrollToId('stack') },
     { label: 'Jump to: Contact',  kind: 'nav', go: () => scrollToId('contact') },
-    { label: 'Off the keyboard (personal page)', kind: 'act', go: () => window.location.href = 'off-the-keyboard.html' },
     { label: 'Email christopher@tulabut.com', kind: 'act', go: () => window.location.href = 'mailto:christopher@tulabut.com' },
     { label: 'Open GitHub · xhowl1', kind: 'act', go: () => window.open('http://github.com/xhowl1', '_blank') },
     { label: 'Open LinkedIn · christulabut', kind: 'act', go: () => window.open('https://www.linkedin.com/in/christulabut/', '_blank') },

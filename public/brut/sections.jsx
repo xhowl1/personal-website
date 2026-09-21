@@ -55,7 +55,6 @@ function BrutContact() {
       </div>
       <div className="brut-foot">
         <span>© 2026 Christopher Tulabut</span>
-        <span><a href="off-the-keyboard.html" style={{color: 'inherit'}}>Off the keyboard →</a></span>
         <span>Built in HTML · No frameworks were harmed</span>
       </div>
     </section>

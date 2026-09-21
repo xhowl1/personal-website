@@ -2,9 +2,9 @@
 // and a "shrinking name" effect that pulls the hero name into the nav.
 
 function BrutNav({ open, setOpen }) {
-  const ids = ['top', 'now', 'work', 'homelab', 'stack', 'contact'];
+  const ids = ['top', 'now', 'work', 'principles', 'stack', 'contact'];
   const labels = {
-    top: 'Top', now: 'Now', work: 'Work', homelab: 'Homelab',
+    top: 'Top', now: 'Now', work: 'Work', principles: 'How I work',
     stack: 'Stack', contact: 'Contact',
   };
   const active = useScrollSpy(ids);
@@ -46,7 +46,7 @@ function CommandPalette({ open, setOpen }) {
   const items = [
     { label: 'Jump to: Now',      kind: 'nav', go: () => scrollToId('now') },
     { label: 'Jump to: Work',     kind: 'nav', go: () => scrollToId('work') },
-    { label: 'Jump to: Homelab',  kind: 'nav', go: () => scrollToId('homelab') },
+    { label: 'Jump to: How I work', kind: 'nav', go: () => scrollToId('principles') },
     { label: 'Jump to: Stack',    kind: 'nav', go: () => scrollToId('stack') },
     { label: 'Jump to: Contact',  kind: 'nav', go: () => scrollToId('contact') },
     { label: 'Email christopher@tulabut.com', kind: 'act', go: () => window.location.href = 'mailto:christopher@tulabut.com' },

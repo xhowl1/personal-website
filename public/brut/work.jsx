@@ -111,7 +111,7 @@ function BrutWork() {
         <span className="brut-label">§ Work history</span>
         <span className="brut-label">{WORK.length} roles · 16 yrs</span>
       </div>
-      <h2 className="brut-section-title" data-reveal>I join a team and grow<br />the platform alongside it.</h2>
+      <h2 className="brut-section-title" data-reveal>Teams grow. I make sure<br />the platform keeps up.</h2>
       <div className="brut-work-list">
         {WORK.map((job, i) => <WorkRow key={i} job={job} idx={i} />)}
       </div>

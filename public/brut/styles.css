@@ -412,51 +412,6 @@ a { color: inherit; }
   border-top: 1.5px solid var(--brut-fg);
 }
 
-/* ---------- Biking ---------- */
-.brut-bike-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 24px;
-}
-.brut-bike-stats {
-  display: grid; grid-template-columns: 1fr; gap: 0;
-  border: var(--brut-border) solid var(--brut-fg);
-  align-self: start;
-}
-.brut-bike-stats .brut-stat {
-  border-right: none;
-  border-bottom: 1.5px solid var(--brut-fg);
-}
-.brut-bike-stats .brut-stat:last-child { border-bottom: none; }
-
-.brut-rides {
-  border: var(--brut-border) solid var(--brut-fg);
-  background: var(--brut-card);
-  padding: 20px;
-}
-.brut-rides-head {
-  display: flex; justify-content: space-between; align-items: baseline;
-  font-size: 16px; font-weight: 600;
-  padding-bottom: 12px;
-  border-bottom: 1.5px solid var(--brut-fg);
-  margin-bottom: 12px;
-}
-.brut-rides-table { width: 100%; border-collapse: collapse; }
-.brut-rides-table th, .brut-rides-table td {
-  text-align: left; padding: 10px 8px;
-  border-bottom: 1px dashed rgba(var(--brut-line-rgb), 0.3);
-}
-.brut-rides-table th {
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em;
-  color: var(--brut-muted); font-weight: 500;
-}
-.brut-rides-table td.r, .brut-rides-table th.r { text-align: right; }
-.brut-rides-table tbody tr:hover { background: rgba(var(--brut-line-rgb), 0.04); }
-.brut-mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 13px; }
-.brut-muted { color: var(--brut-muted); }
-.brut-bike-note { margin: 16px 0 0; padding-top: 12px; border-top: 1.5px solid var(--brut-fg); font-size: 14px; }
-
 /* ---------- Stack ---------- */
 .brut-stack-grid {
   display: grid;
@@ -574,7 +529,7 @@ a { color: inherit; }
   .brut-lab-stats { grid-template-columns: repeat(2, 1fr); }
   .brut-lab-stats .brut-stat:nth-child(2) { border-right: none; }
   .brut-lab-stats .brut-stat:nth-child(-n+2) { border-bottom: 1.5px solid var(--brut-fg); }
-  .brut-lab-grid, .brut-bike-grid { grid-template-columns: 1fr; }
+  .brut-lab-grid { grid-template-columns: 1fr; }
   .brut-rack { position: static; }
   .brut-services-grid { grid-template-columns: 1fr; }
   .brut-work-head { grid-template-columns: 100px 1fr 32px; gap: 16px; }
